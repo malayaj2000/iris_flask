@@ -1,0 +1,17 @@
+{%extends "home.html"%}
+{% block title %}Iris prediction{% endblock %}
+
+{% block content %}
+    <center>
+        <form action="{{url_for('predict')}}" method="POST">
+            <p><input type="text" name="a" placeholder="sepal length"></p>
+            <p><input type="text" name="b" placeholder="sepal width"></p>
+            <p><input type="text" name="c" placeholder="petal length"></p>
+            <p><input type="text" name="d" placeholder="petal width"></p>
+            <br>
+            <input type="submit" value="predict">
+            
+        </form>
+    </center>
+ 
+{% endblock %}

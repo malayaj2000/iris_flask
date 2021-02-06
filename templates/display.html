@@ -1,0 +1,22 @@
+{%extends "home.html"%}
+{% block title %}prediction{% endblock %}
+{% block content %}
+    <!--{% for i in arr%}
+        <h1>{{i}}</h1>
+    {% endfor %}-->
+    <!--<h3>{{arr}}</h3>-->
+    <center>
+        {% if arr=='0' %}
+        <h2>setosa</h2>
+        <img src="static\0.png" alt="0.png">
+    {% elif arr=='1'%}
+        <h2>versicolor</h2>
+        <img src="static\1.png" alt="1.png">
+    {% elif arr == '2'%}
+        <h2>virginica</h2>
+        <img src="static\2.png" alt="2.png">
+    {% endif %}
+
+    </center>
+  
+{% endblock %}
